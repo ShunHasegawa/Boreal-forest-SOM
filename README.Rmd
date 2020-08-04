@@ -1,0 +1,25 @@
+---
+title: "Title"
+author: "Shun Hasegawa"
+date: "Date"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This repository stores the R scripts and data to reproduced the results presented in XXX.
+
+# File description
+
+## R scripts
+
+## Data
+
+## Session information
+```{r sessioninfo, echo=FALSE, message=FALSE}
+source("R/packages.R")
+sessionInfo()
+```
+
