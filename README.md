@@ -2,7 +2,7 @@ Decadal nitrogen addition alters chemical composition of soil organic
 matter in a boreal forest
 ================
 Shun Hasegawa
-Date
+4th August 2020
 
 This repository stores the R scripts and data to reproduced the results
 presented in XXX.
@@ -16,7 +16,7 @@ presented in XXX.
   - **analysis\_correlation.R**: This analyses correlation between leaf
     \(\delta^{15}N\) and the relative abundance of N compound in the
     pyrolysis products, soil C:N ratio and the relative abundance of N
-    compound in the pyrolysis products and leaf \(\delta^{15}N\) and
+    compound in the pyrolysis products and leaf $\delta^{15}N$ and
     soil C mass.
 
   - **analysis\_LCratio.R**: This analyses the association between
@@ -41,15 +41,19 @@ presented in XXX.
 
   - **Leaf\_d15N.csv**: Data on \(\delta^{15}N\) in *Vaccinium
     vitis-idaea* leaves.
+
   - **NMR\_spectra\_relative\_abund.csv**: Relative abundance of NMR
     products.
+
   - **Pyrolysis\_chromatogram\_FHhoriz.csv**: Peak area size of
     chromatogram for the pyrolysis products in the soil samples
     collected at the F/H horizon.
+
   - **Pyrolysis\_chromatogram\_Lhoriz.csv**: Peak area size of
     chromatogram for the pyrolysis products in the soil samples
     collected at the L horizon.
-  - **Soil\_CN.csv**:
+
+  - **Soil\_CN.csv**: C and N mass in the soil.
 
 ## Session information
 

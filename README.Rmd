@@ -1,7 +1,7 @@
 ---
 title: "Decadal nitrogen addition alters chemical composition of soil organic matter in a boreal forest"
 author: "Shun Hasegawa"
-date: "Date"
+date: "4th August 2020"
 output: github_document
 ---
 
@@ -31,12 +31,20 @@ This repository stores the R scripts and data to reproduced the results presente
 * **NMR_spectra_relative_abund.csv**: Relative abundance of NMR products.
 * **Pyrolysis_chromatogram_FHhoriz.csv**: Peak area size of chromatogram for the pyrolysis products in the soil samples collected at the F/H horizon.
 * **Pyrolysis_chromatogram_Lhoriz.csv**: Peak area size of chromatogram for the pyrolysis products in the soil samples collected at the L horizon.
-* **Soil_CN.csv**: 
+
+* **Soil_CN.csv**: C and N mass in the soil.
 
 
 ## Session information
 ```{r sessioninfo, echo=FALSE, message=FALSE}
-source("R/packages.R")
+library(plyr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(vegan)
+library(lme4)
+library(lmerTest)
+library(car)
 sessionInfo()
 ```
 
