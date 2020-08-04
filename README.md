@@ -11,35 +11,32 @@ presented in XXX.
 
 ## R scripts
 
-  - **analysis.R**: This loads required packages and data.   
+  - **analysis.R**: This loads required packages and data.
 
   - **analysis\_correlation.R**: This analyses correlation between leaf
-    ^{15}N and the relative abundance of N compound in the pyrolysis
+    d15N and the relative abundance of N compound in the pyrolysis
     products, soil C:N ratio and the relative abundance of N compound in
-    the pyrolysis products and leaf $\delta^{15}N$ and soil C mass.
+    the pyrolysis products and leaf d15N and soil C mass.
 
   - **analysis\_LCratio.R**: This analyses the association between
-    lignin:carbohydrate ratios in the pyrolysis product and leaf
-    \(\delta^{15}N\).
+    lignin:carbohydrate ratios in the pyrolysis product and leaf d15N.
 
   - **analysis\_leaf\_d15N.R**: This fits an asymptotic regression line
-    on leaf \(\delta^{15}N\) as a function of distance from the edge of
-    the experimental plots.
+    on leaf d15N as a function of distance from the edge of the
+    experimental plots.
 
   - **analysis\_NMR.R**: Herein, the results of NMR analysis were
     summarised. Also, redundancy analysis (RDA) is performed on the
     composition of NMR products to assess its association with leaf
-    \(\delta^{15}N\).
+    d15N.
 
   - **analysis\_pyrolysis.R**: Herein, the results of pyrolysis GC/MS
     were summarised. Also, RDA is performed on the composition of
-    pyroslysis products to assess its association with leaf
-    \(\delta^{15}N\).
+    pyroslysis products to assess its association with leaf d15N.
 
 ## Data
 
-  - **Leaf\_d15N.csv**: Data on \(\delta^{15}N\) in *Vaccinium
-    vitis-idaea* leaves.
+  - **Leaf\_d15N.csv**: Data on d15N in *Vaccinium vitis-idaea* leaves.
 
   - **NMR\_spectra\_relative\_abund.csv**: Relative abundance of NMR
     products.
