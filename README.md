@@ -51,6 +51,8 @@ presented in XXX.
 
   - **Soil\_CN.csv**: C and N mass in the soil.
 
+  - **Metadata.csv**: Metadata for the above data files.
+
 ## Session information
 
     ## R version 3.5.2 (2018-12-20)

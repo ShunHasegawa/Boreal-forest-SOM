@@ -28,12 +28,16 @@ This repository stores the R scripts and data to reproduced the results presente
 
 ## Data
 * **Leaf_d15N.csv**: Data on d15N in *Vaccinium vitis-idaea* leaves.
+
 * **NMR_spectra_relative_abund.csv**: Relative abundance of NMR products.
+
 * **Pyrolysis_chromatogram_FHhoriz.csv**: Peak area size of chromatogram for the pyrolysis products in the soil samples collected at the F/H horizon.
+
 * **Pyrolysis_chromatogram_Lhoriz.csv**: Peak area size of chromatogram for the pyrolysis products in the soil samples collected at the L horizon.
 
 * **Soil_CN.csv**: C and N mass in the soil.
 
+* **Metadata.csv**: Metadata for the above data files.
 
 ## Session information
 ```{r sessioninfo, echo=FALSE, message=FALSE}
