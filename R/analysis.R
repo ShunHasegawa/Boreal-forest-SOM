@@ -1,5 +1,29 @@
-source("R/packages.R")
-source("R/functions.R")
+
+# Packages ----------------------------------------------------------------
+
+library(plyr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(vegan)
+library(lme4)
+library(lmerTest)
+library(car)
+
+
+# Function ----------------------------------------------------------------
+
+# Get 95% confidence interval
+get_ci <- function (x, ci = 0.95, ...) {
+  a <- mean(x, ...)
+  s <- sd(x, ...)
+  n <- sum(!is.na(x))
+  error <- qt(ci + (1 - ci)/2, df = n - 1) * s/sqrt(n)
+  return(error)
+}
+
+
+
 
 # Load and prepare data ---------------------------------------------------------------
 
