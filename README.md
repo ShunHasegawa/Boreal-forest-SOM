@@ -11,13 +11,12 @@ presented in XXX.
 
 ## R scripts
 
-  - **analysis.R**: This loads required packages and data.
+  - **analysis.R**: This loads required packages and data.   
 
   - **analysis\_correlation.R**: This analyses correlation between leaf
-    \(\delta^{15}N\) and the relative abundance of N compound in the
-    pyrolysis products, soil C:N ratio and the relative abundance of N
-    compound in the pyrolysis products and leaf $\delta^{15}N$ and
-    soil C mass.
+    ^{15}N and the relative abundance of N compound in the pyrolysis
+    products, soil C:N ratio and the relative abundance of N compound in
+    the pyrolysis products and leaf $\delta^{15}N$ and soil C mass.
 
   - **analysis\_LCratio.R**: This analyses the association between
     lignin:carbohydrate ratios in the pyrolysis product and leaf

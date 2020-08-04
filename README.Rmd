@@ -14,9 +14,9 @@ This repository stores the R scripts and data to reproduced the results presente
 # File description
 
 ## R scripts
-* **analysis.R**: This loads required packages and data.
+* **analysis.R**: This loads required packages and data. \alpha\
 
-* **analysis_correlation.R**: This analyses correlation between leaf $\delta^{15}N$ and the relative abundance of N compound in the pyrolysis products, soil C:N ratio and the relative abundance of N compound in the pyrolysis products and leaf $\delta^{15}N$ and soil C mass.
+* **analysis_correlation.R**: This analyses correlation between leaf \delta^{15}N and the relative abundance of N compound in the pyrolysis products, soil C:N ratio and the relative abundance of N compound in the pyrolysis products and leaf $\delta^{15}N$ and soil C mass.
 
 * **analysis_LCratio.R**: This analyses the association between lignin:carbohydrate ratios in the pyrolysis product and leaf $\delta^{15}N$.
 
