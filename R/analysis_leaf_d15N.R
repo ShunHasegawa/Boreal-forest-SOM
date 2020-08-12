@@ -4,17 +4,16 @@
 # extended Weibull model
 
 irms_lingon_trans_f <- filter(leaf_d, treatment == "fertilised") %>% 
-  mutate(distance2 = distance + 100)
+  mutate(distance2 = distance + 101)
 
-# starting values
-iv <- getInitial(leaf_d15N ~ SSweibull(distance2, Asym, Drop, lrc, pwr), data = irms_lingon_trans_f) 
-nm1 <- nls(leaf_d15N ~ Asym - Drop * exp(-exp(lrc) * distance2^pwr), start = iv, data = irms_lingon_trans_f)
+# fit the model
+nm1 <- nls(leaf_d15N ~ SSweibull(distance2, Asym, Drop, lrc, pwr), start = iv, data = irms_lingon_trans_f) 
 summary(nm1)
 
 # get predictive line from the above model
-predd <- data.frame(distance2 = seq(0, 200, length.out = 100)) %>% 
+predd <- data.frame(distance2 = seq(1, 201, length.out = 100)) %>% 
   mutate(leaf_d15N = predict(nm1, list(distance2 = distance2)),
-         distance  = distance2 - 100, 
+         distance  = distance2 - 101, 
          treatment = "fertilised")
 trt_lab_dc <- data.frame(distance = c(-65, 0, 65),
                          treatment = "fertilised",
