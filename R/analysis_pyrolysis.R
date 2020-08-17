@@ -58,6 +58,9 @@ pyr_L <- pyr_L_spec %>%
 pyr_L_sp   <- decostand(select(pyr_L, one_of(pyr_L_grp)), method = "hellinger")
 pyr_L_rda  <- rda(pyr_L_sp ~ leaf_d15N, pyr_L)
 anova(pyr_L_rda, nperm = 4999)
+# Species loading
+scores(pyr_L_rda, display = "species", scaling = 3)
+
 
 # only fertilised plots
 pyr_L_f <- filter(pyr_L, location != "control")
@@ -65,10 +68,8 @@ pyr_L_sp_f   <- decostand(select(pyr_L_f, one_of(pyr_L_grp)), method = "hellinge
 pyr_L_rda_f  <- rda(pyr_L_sp_f ~ leaf_d15N, pyr_L_f)
 anova(pyr_L_rda_f, nperm = 4999)
 
-
 # Species loading
-scores(pyr_L_rda, display = "species")
-scores(pyr_L_rda_f, display = "species")
+scores(pyr_L_rda_f, display = "species", scaling = 3)
 
 
 # .FH horizon ----------------------------------------------------------------
@@ -81,13 +82,14 @@ pyr_FH <- pyr_FH_spec %>%
 pyr_FH_sp   <- decostand(select(pyr_FH, one_of(pyr_FH_grp)), method = "hellinger")
 pyr_FH_rda  <- rda(pyr_FH_sp ~ leaf_d15N, pyr_FH)
 anova(pyr_FH_rda, nperm = 4999)
+# Species loading
+scores(pyr_FH_rda, display = "species", scaling = 3)
+
 
 # only fertilised
 pyr_FH_f <- filter(pyr_FH, location != "control")
 pyr_FH_sp_f   <- decostand(select(pyr_FH_f, one_of(pyr_FH_grp)), method = "hellinger")
 pyr_FH_rda_f  <- rda(pyr_FH_sp_f ~ leaf_d15N, pyr_FH_f)
 anova(pyr_FH_rda_f, nperm = 4999)
-
 # Species loading
-scores(pyr_FH_rda, display = "species")
-scores(pyr_FH_rda_f, display = "species")
+scores(pyr_FH_rda_f, display = "species", scaling = 3)
