@@ -7,7 +7,7 @@ irms_lingon_trans_f <- filter(leaf_d, treatment == "fertilised") %>%
   mutate(distance2 = distance + 101)
 
 # fit the model
-nm1 <- nls(leaf_d15N ~ SSweibull(distance2, Asym, Drop, lrc, pwr), start = iv, data = irms_lingon_trans_f) 
+nm1 <- nls(leaf_d15N ~ SSweibull(distance2, Asym, Drop, lrc, pwr), data = irms_lingon_trans_f) 
 summary(nm1)
 
 # get predictive line from the above model
