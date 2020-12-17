@@ -8,7 +8,7 @@ Anova(lc_leafd15N_m1, test.statistic = "F")
 plot(lc_leafd15N_m1)
 qqPlot(resid(lc_leafd15N_m1))
 
-# Outliers are suggested
+# Outliers are suggested. So remove them.
 lc_leafd15N_m2 <- update(lc_leafd15N_m1, subset=-c(11, 39))
 Anova(lc_leafd15N_m2, test.statistic = "F")
 plot(lc_leafd15N_m2)
@@ -29,4 +29,3 @@ lc_leafd15N_fm1 <- lmer(1/LCratio ~ leaf_d15N * horizon + (1|id),
 Anova(lc_leafd15N_fm1, test.statistic = "F")
 plot(lc_leafd15N_fm1)
 qqPlot(resid(lc_leafd15N_fm1))
-
