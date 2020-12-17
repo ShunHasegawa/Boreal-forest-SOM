@@ -32,7 +32,13 @@ presented in XXX.
 
   - **analysis\_pyrolysis.R**: Herein, the results of pyrolysis GC/MS
     were summarised. Also, RDA is performed on the composition of
-    pyroslysis products to assess its association with leaf d15N.
+    pyrolysis products to assess its association with leaf d15N.
+
+  - **analysis\_NMR\_Cmass.R**: Herein, C mass of lignin and
+    carbohydrate compouds were estimated using the molecular mixing
+    model from the NMR-product data. Then, how changes in the estimated
+    C mass with leaf d15N vary between lignin and carbohydrates were
+    anlysed.
 
 ## Data
 
@@ -57,7 +63,7 @@ presented in XXX.
 
     ## R version 3.5.2 (2018-12-20)
     ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-    ## Running under: macOS  10.15.6
+    ## Running under: macOS  10.15.7
     ## 
     ## Matrix products: default
     ## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
