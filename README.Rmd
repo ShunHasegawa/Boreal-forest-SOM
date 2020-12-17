@@ -24,7 +24,10 @@ This repository stores the R scripts and data to reproduced the results presente
 
 * **analysis_NMR.R**: Herein, the results of NMR analysis were summarised. Also, redundancy analysis (RDA) is performed on the composition of NMR products to assess its association with leaf d15N.
 
-* **analysis_pyrolysis.R**: Herein, the results of pyrolysis GC/MS were summarised. Also, RDA is performed on the composition of pyroslysis products to assess its association with leaf d15N.
+* **analysis_pyrolysis.R**: Herein, the results of pyrolysis GC/MS were summarised. Also, RDA is performed on the composition of pyrolysis products to assess its association with leaf d15N.
+
+* **analysis_NMR_Cmass.R**: Herein, C mass of lignin and carbohydrate compouds were estimated using the molecular mixing model from the NMR-product data. Then, how changes in the estimated C mass with leaf d15N varies between lignin and carbohydrates were anlysed.
+
 
 ## Data
 * **Leaf_d15N.csv**: Data on d15N in *Vaccinium vitis-idaea* leaves.

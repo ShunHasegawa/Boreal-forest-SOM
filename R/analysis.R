@@ -9,7 +9,7 @@ library(vegan)
 library(lme4)
 library(lmerTest)
 library(car)
-
+library(emmeans)
 
 # Function ----------------------------------------------------------------
 
@@ -62,5 +62,8 @@ source("R/analysis_NMR.R")
 # . lignin:carbohydrate ratios vs. leaf d15N --------------------------------
 source("R/analysis_LCratio.R")
 
-# . Correlation test ----------------------------------------
+# . Correlation test --------------------------------------------------------
 source("R/analysis_correlation.R")
+
+# . C mass estimated from NMR using the molecular mixing model --------------
+source("R/analysis_NMR_Cmass.R")
