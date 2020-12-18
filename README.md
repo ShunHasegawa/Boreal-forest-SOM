@@ -18,6 +18,10 @@ presented in XXX.
     products, soil C:N ratio and the relative abundance of N compound in
     the pyrolysis products and leaf d15N and soil C mass.
 
+  - **analysis\_GSratio.R**: This analyses the association between
+    guaiacyl to syringyl lignin ratios in the pyrolysis product and leaf
+    d15N.
+
   - **analysis\_LCratio.R**: This analyses the association between
     lignin:carbohydrate ratios in the pyrolysis product and leaf d15N.
 
@@ -30,15 +34,15 @@ presented in XXX.
     composition of NMR products to assess its association with leaf
     d15N.
 
-  - **analysis\_pyrolysis.R**: Herein, the results of pyrolysis GC/MS
-    were summarised. Also, RDA is performed on the composition of
-    pyrolysis products to assess its association with leaf d15N.
-
   - **analysis\_NMR\_Cmass.R**: Herein, C mass of lignin and
     carbohydrate compouds were estimated using the molecular mixing
     model from the NMR-product data. Then, how changes in the estimated
     C mass with leaf d15N vary between lignin and carbohydrates were
     anlysed.
+
+  - **analysis\_pyrolysis.R**: Herein, the results of pyrolysis GC/MS
+    were summarised. Also, RDA is performed on the composition of
+    pyrolysis products to assess its association with leaf d15N.
 
 ## Data
 
@@ -76,22 +80,25 @@ presented in XXX.
     ## [1] stats     graphics  grDevices utils     datasets  methods   base     
     ## 
     ## other attached packages:
-    ##  [1] car_3.0-8       carData_3.0-1   lmerTest_3.0-1  lme4_1.1-21    
-    ##  [5] Matrix_1.2-18   vegan_2.5-2     lattice_0.20-38 permute_0.9-4  
-    ##  [9] ggplot2_3.0.0   tidyr_0.8.1     dplyr_0.7.6     plyr_1.8.4     
+    ##  [1] emmeans_1.4.8   car_3.0-8       carData_3.0-1   lmerTest_3.0-1 
+    ##  [5] lme4_1.1-21     Matrix_1.2-18   vegan_2.5-2     lattice_0.20-38
+    ##  [9] permute_0.9-4   ggplot2_3.0.0   tidyr_0.8.1     dplyr_0.7.6    
+    ## [13] plyr_1.8.4     
     ## 
     ## loaded via a namespace (and not attached):
-    ##  [1] tidyselect_0.2.4  xfun_0.16         purrr_0.2.5       splines_3.5.2    
-    ##  [5] haven_1.1.2       colorspace_1.3-2  htmltools_0.3.6   yaml_2.1.19      
-    ##  [9] mgcv_1.8-26       rlang_0.2.1       pillar_1.2.3      nloptr_1.0.4     
-    ## [13] foreign_0.8-71    glue_1.4.1        withr_2.1.2       readxl_1.1.0     
-    ## [17] bindrcpp_0.2.2    bindr_0.1.1       stringr_1.3.1     cellranger_1.1.0 
-    ## [21] munsell_0.5.0     gtable_0.2.0      zip_2.0.1         evaluate_0.14    
-    ## [25] knitr_1.29        rio_0.5.10        forcats_0.3.0     parallel_3.5.2   
-    ## [29] curl_3.2          Rcpp_0.12.17      scales_0.5.0      abind_1.4-5      
-    ## [33] hms_0.4.2         digest_0.6.15     openxlsx_4.1.0    stringi_1.2.3    
-    ## [37] numDeriv_2016.8-1 grid_3.5.2        tools_3.5.2       magrittr_1.5     
-    ## [41] lazyeval_0.2.1    tibble_1.4.2      cluster_2.0.7-1   pkgconfig_2.0.1  
-    ## [45] MASS_7.3-51.5     data.table_1.11.4 assertthat_0.2.0  minqa_1.2.4      
-    ## [49] rmarkdown_2.3     R6_2.2.2          boot_1.3-20       nlme_3.1-137     
-    ## [53] compiler_3.5.2
+    ##  [1] Rcpp_0.12.17      mvtnorm_1.0-8     zoo_1.8-3         assertthat_0.2.0 
+    ##  [5] digest_0.6.15     R6_2.2.2          cellranger_1.1.0  evaluate_0.14    
+    ##  [9] coda_0.19-2       pillar_1.2.3      rlang_0.2.1       lazyeval_0.2.1   
+    ## [13] curl_3.2          multcomp_1.4-8    readxl_1.1.0      minqa_1.2.4      
+    ## [17] data.table_1.11.4 nloptr_1.0.4      rmarkdown_2.3     splines_3.5.2    
+    ## [21] stringr_1.3.1     foreign_0.8-71    munsell_0.5.0     compiler_3.5.2   
+    ## [25] numDeriv_2016.8-1 xfun_0.16         pkgconfig_2.0.1   mgcv_1.8-26      
+    ## [29] htmltools_0.3.6   tidyselect_0.2.4  tibble_1.4.2      codetools_0.2-15 
+    ## [33] rio_0.5.10        withr_2.1.2       MASS_7.3-51.5     grid_3.5.2       
+    ## [37] nlme_3.1-137      xtable_1.8-2      gtable_0.2.0      magrittr_1.5     
+    ## [41] scales_0.5.0      zip_2.0.1         estimability_1.3  stringi_1.2.3    
+    ## [45] bindrcpp_0.2.2    boot_1.3-20       sandwich_2.4-0    openxlsx_4.1.0   
+    ## [49] TH.data_1.0-9     tools_3.5.2       forcats_0.3.0     glue_1.4.1       
+    ## [53] purrr_0.2.5       hms_0.4.2         survival_2.43-3   abind_1.4-5      
+    ## [57] parallel_3.5.2    yaml_2.1.19       colorspace_1.3-2  cluster_2.0.7-1  
+    ## [61] knitr_1.29        bindr_0.1.1       haven_1.1.2
