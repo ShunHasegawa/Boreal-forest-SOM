@@ -65,6 +65,10 @@ source("R/analysis_NMR.R")
 source("R/analysis_LCratio.R")
 
 
+# . G:S-lignin ratios vs. leaf d15N -----------------------------------------
+source("R/analysis_GSratio.R")
+
+
 # . Correlation test --------------------------------------------------------
 source("R/analysis_correlation.R")
 
