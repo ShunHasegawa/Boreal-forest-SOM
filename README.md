@@ -44,7 +44,7 @@ results presented in the manuscript below.
   - **analysis\_NMR\_Cmass.R**: Herein, C mass of lignin and
     carbohydrate compouds were estimated using the molecular mixing
     model from the NMR-product data. Then, how changes in the estimated
-    C mass with leaf d15N vary between lignin and carbohydrates were
+    C mass with leaf d15N vary between lignin and carbohydrates was
     anlysed.
 
   - **analysis\_pyrolysis.R**: Herein, the results of pyrolysis GC/MS
@@ -60,11 +60,11 @@ results presented in the manuscript below.
 
   - **Pyrolysis\_chromatogram\_FHhoriz.csv**: Peak area size of
     chromatogram for the pyrolysis products in the soil samples
-    collected at the F/H horizon.
+    collected in the F/H horizon.
 
   - **Pyrolysis\_chromatogram\_Lhoriz.csv**: Peak area size of
     chromatogram for the pyrolysis products in the soil samples
-    collected at the L horizon.
+    collected in the L horizon.
 
   - **Soil\_CN.csv**: C and N mass in the soil.
 

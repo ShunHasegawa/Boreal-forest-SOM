@@ -31,7 +31,7 @@ This repository stores the R scripts and raw data to reproduce the results prese
 
 * **analysis_NMR.R**: Herein, the results of NMR analysis were summarised. Also, redundancy analysis (RDA) is performed on the composition of NMR products to assess its association with leaf d15N.
 
-* **analysis_NMR_Cmass.R**: Herein, C mass of lignin and carbohydrate compouds were estimated using the molecular mixing model from the NMR-product data. Then, how changes in the estimated C mass with leaf d15N vary between lignin and carbohydrates were anlysed.
+* **analysis_NMR_Cmass.R**: Herein, C mass of lignin and carbohydrate compouds were estimated using the molecular mixing model from the NMR-product data. Then, how changes in the estimated C mass with leaf d15N vary between lignin and carbohydrates was anlysed.
 
 * **analysis_pyrolysis.R**: Herein, the results of pyrolysis GC/MS were summarised. Also, RDA is performed on the composition of pyrolysis products to assess its association with leaf d15N.
 
@@ -40,9 +40,9 @@ This repository stores the R scripts and raw data to reproduce the results prese
 
 * **NMR_spectra_relative_abund.csv**: Relative abundance of NMR products.
 
-* **Pyrolysis_chromatogram_FHhoriz.csv**: Peak area size of chromatogram for the pyrolysis products in the soil samples collected at the F/H horizon.
+* **Pyrolysis_chromatogram_FHhoriz.csv**: Peak area size of chromatogram for the pyrolysis products in the soil samples collected in the F/H horizon.
 
-* **Pyrolysis_chromatogram_Lhoriz.csv**: Peak area size of chromatogram for the pyrolysis products in the soil samples collected at the L horizon.
+* **Pyrolysis_chromatogram_Lhoriz.csv**: Peak area size of chromatogram for the pyrolysis products in the soil samples collected in the L horizon.
 
 * **Soil_CN.csv**: C and N mass in the soil.
 
