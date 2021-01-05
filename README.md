@@ -1,11 +1,18 @@
 Decadal nitrogen addition alters chemical composition of soil organic
-matter in a boreal forest
+matter in a boreal forest—accepted by Geoderma
 ================
 Shun Hasegawa
-4th August 2020
+5th January 2021
 
-This repository stores the R scripts and data to reproduced the results
-presented in XXX.
+This repository stores the R scripts and raw data to reproduce the
+results presented in the manuscript below.
+
+  - Article title: Decadal nitrogen addition alters chemical composition
+    of soil organic matter in a boreal forest
+  - Authors: Shun Hasegawa; John Marshall; Tobias Sparrman; Torgny
+    Näsholm
+  - Journal: **Geoderma**
+  - Article acceptance date: 19<sup>th</sup> December 2020
 
 # File description
 
