@@ -1,0 +1,34 @@
+﻿Filename,Variable,Unit,Description
+NMR_spectra_relative_abund.csv,id,,Sample ID
+NMR_spectra_relative_abund.csv,horizon,,Horizon where soil samples were collected
+NMR_spectra_relative_abund.csv,alkylC,%,Relative abundance of alkyl C in the NMR product
+NMR_spectra_relative_abund.csv,meth_N_alkylC,%,Relative abundance of Methoxy/N-alkyl C in the NMR product 
+NMR_spectra_relative_abund.csv,O_alkylC,%,Relative abundance of O-alkyl C in the NMR product
+NMR_spectra_relative_abund.csv,di_O_alkylC,%,Relative abundance of di-O-alkyl C in the NMR product
+NMR_spectra_relative_abund.csv,aromatic,%,Relative abundance of aromatic C in the NMR product
+NMR_spectra_relative_abund.csv,O_aromaticC,%,Relative abundance of O-aromatic C in the NMR product
+NMR_spectra_relative_abund.csv,carbonylC,%,Relative abundance of carbonyl C in the NMR product
+Soil_CN.csv,id,,Sample ID
+Soil_CN.csv,horizon,,Horizon where soil samples were collected
+Soil_CN.csv,treatment,,N fertiliser treatment
+Soil_CN.csv,location,,"Sampling location: control and fertilised plots. The fertilised plots are futher cateogorised intothree groups: inside (>10 m inwards from the edge), edge (≤10 m from the edge,) and outside (>10 m outwards from the edge)"
+Soil_CN.csv,wC,%,%C
+Soil_CN.csv,wN,%,%N
+Soil_CN.csv,Cmass,kg C m-2,Soil C mass
+Soil_CN.csv,Nmass,kg N m-2,Soil N mass
+Soil_CN.csv,CNratio,,Soil C:N ratio
+Pyrolysis_chromatogram_FHhoriz.csv,id,,Sample ID
+Pyrolysis_chromatogram_FHhoriz.csv,horizon,,Horizon where soil samples were collected
+Pyrolysis_chromatogram_FHhoriz.csv,category,,Category of pyrolysis compounds
+Pyrolysis_chromatogram_FHhoriz.csv,compound,,Pyrolysis compounds
+Pyrolysis_chromatogram_FHhoriz.csv,peak_area,,Peak area size of chromatgram
+Pyrolysis_chromatogram_Lhoriz.csv,id,,Sample ID
+Pyrolysis_chromatogram_Lhoriz.csv,horizon,,Horizon where soil samples were collected
+Pyrolysis_chromatogram_Lhoriz.csv,category,,Category of pyrolysis compounds
+Pyrolysis_chromatogram_Lhoriz.csv,compound,,Pyrolysis compounds
+Pyrolysis_chromatogram_Lhoriz.csv,peak_area,,Peak area size of chromatgram
+Leaf_d15N.csv,id,,Sample ID
+Leaf_d15N.csv,treatment,,N fertiliser treatment
+Leaf_d15N.csv,location,,"Sampling location: control and fertilised plots. The fertilised plots are futher cateogorised intothree groups: inside (>10 m inwards from the edge), edge (≤10 m from the edge,) and outside (>10 m outwards from the edge)"
+Leaf_d15N.csv,distance,m,Distance from the edge of plots (Distance = 0) towards the centre of the plot (Distance < 0) and outward (Distance > 0).
+Leaf_d15N.csv,leaf_d15N,‰,δ15N of the Vaccinium vitis-idaea leaves
