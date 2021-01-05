@@ -7,14 +7,13 @@
 # A function to solve the mixing model that estimates four compounds
 # (carbohydrate, protein, lignin, aliphatic). The parameters are obtained from
 # Nelson and Baldock 2005
-get_NMR_comp_prop_4 <- function(ns, as, bs, xs, ds,
+get_NMR_comp_prop_4 <- function(ns, as, bs, ds,
                                 aa = 0.000, ab = 0.396, ac = 0.105, ad = 0.756, 
                                 ba = 0.790, bb = 0.021, bc = 0.125, bd = 0.090, 
                                 nb = 0.320, nc = 0.000, nd = 0.000){
   # ns: N:C ratio
   # as: alkyl C
   # bs: O-alkyl C
-  # xs: carbonyl C
   # ds: Aromatic C
   c1 <- c(1, 1, 1, 1)
   c2 <- c(aa, nb, nc, nd)
@@ -34,7 +33,6 @@ nmr_comp_mass <- adply(nmr_raw_d, 1, function(x){
   comp_pr <- with(x, get_NMR_comp_prop_4(ns = wN/wC, 
                                          as = alkylC/100,
                                          bs = O_alkylC/100, 
-                                         xs = carbonylC/100,
                                          ds = aromatic/100))
   # get area-bases mass (kg C m-2)
   comp_Cmass <- comp_pr * x$Cmass
@@ -52,6 +50,7 @@ nmr_comp_mass_ed <- nmr_comp_mass %>%
 nmr_Cmass_m1 <- lmer(log(NMR_cmass) ~ compound * leaf_d15N * horizon + (1|id/horizon), nmr_comp_mass_ed)
 summary(nmr_Cmass_m1)
 Anova(nmr_Cmass_m1, test.statistic = "F")
+plot(nmr_Cmass_m1)
 qqPlot(resid(nmr_Cmass_m1))
   # A significant interaction between compound types and leaf_d15N is suggested.
 
