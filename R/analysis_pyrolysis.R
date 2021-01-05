@@ -58,6 +58,7 @@ pyr_L <- pyr_L_spec %>%
 pyr_L_sp   <- decostand(select(pyr_L, one_of(pyr_L_grp)), method = "hellinger")
 pyr_L_rda  <- rda(pyr_L_sp ~ leaf_d15N, pyr_L)
 anova(pyr_L_rda, nperm = 4999)
+summary(pyr_L_rda)
 # Species loading
 scores(pyr_L_rda, display = "species", scaling = 3)
 
@@ -82,6 +83,7 @@ pyr_FH <- pyr_FH_spec %>%
 pyr_FH_sp   <- decostand(select(pyr_FH, one_of(pyr_FH_grp)), method = "hellinger")
 pyr_FH_rda  <- rda(pyr_FH_sp ~ leaf_d15N, pyr_FH)
 anova(pyr_FH_rda, nperm = 4999)
+summary(pyr_FH_rda)
 # Species loading
 scores(pyr_FH_rda, display = "species", scaling = 3)
 

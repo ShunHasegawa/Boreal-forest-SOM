@@ -22,9 +22,9 @@ nmr_L <- filter(nmr_raw_d, horizon == "L horizon")
 nmr_L_sp  <- decostand(select(nmr_L, one_of(NMR_compounds)), method = "hellinger")
 nmr_L_rda  <- rda(nmr_L_sp ~ leaf_d15N, nmr_L)
 anova(nmr_L_rda, nperm = 4999)
+summary(nmr_L_rda)
 # Species loading
 scores(nmr_L_rda, display = "species", scaling = 3)
-
 
 # only fertilised plots
 nmr_L_f <- filter(nmr_raw_d, horizon == "L horizon" & treatment == "fertilised")
@@ -43,6 +43,7 @@ nmr_FH <- filter(nmr_raw_d, horizon == "F/H horizon")
 nmr_FH_sp  <- decostand(select(nmr_FH, one_of(NMR_compounds)), method = "hellinger")
 nmr_FH_rda  <- rda(nmr_FH_sp ~ leaf_d15N, nmr_FH)
 anova(nmr_FH_rda, nperm = 4999)
+summary(nmr_FH_rda)
 # Species loading
 scores(nmr_FH_rda, display = "species", scaling = 3)
 
